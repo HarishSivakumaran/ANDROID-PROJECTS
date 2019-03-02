@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAE0E2"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/errorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="#E8290B"
+        android:onClick="ShowToast"
+        android:text="ERROR MESSAGE"
+        android:textColor="@android:color/background_light"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/successMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="#26ae60"
+        android:onClick="ShowToast"
+        android:text="Success MESSAGE"
+        android:textColor="@android:color/background_light"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/infoMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="#0A79DF"
+        android:onClick="ShowToast"
+        android:text="INFO MESSAGE"
+        android:textColor="@android:color/background_light"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/warningMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="#F3B63A"
+        android:onClick="ShowToast"
+        android:text="WARNING MESSAGE"
+        android:textColor="@android:color/background_light"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/imageMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="#1287A5"
+        android:onClick="ShowToast"
+        android:text="IMAGE MESSAGE"
+        android:textColor="@android:color/background_light"
+        android:textSize="18dp" />
+
+
+</LinearLayout>
