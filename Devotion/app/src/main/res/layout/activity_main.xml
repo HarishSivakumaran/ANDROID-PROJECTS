@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/animatedbackground">
+    android:background="@drawable/animatedbackground"
+    android:id="@+id/layout_root">
 
     <Button
         android:id="@+id/login"
