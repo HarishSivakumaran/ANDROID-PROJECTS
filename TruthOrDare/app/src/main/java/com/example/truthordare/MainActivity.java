@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void spinMethod(View view){
-        int newdirection =random.nextInt(3000)+720;
+        int newdirection =random.nextInt(3000) + 720;
         int pivotx =imageView.getWidth()/2;
         int pivoty=imageView.getHeight()/2;
         Animation rotate =new RotateAnimation(lastdirection,newdirection,pivotx,pivoty);
