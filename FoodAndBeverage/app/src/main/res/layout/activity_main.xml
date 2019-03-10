@@ -14,11 +14,12 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:progress="30"
+        android:max="100"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/autoCompleteTextView2"
         tools:layout_editor_absoluteX="38dp" />
 
-    <ImageView
+    <LinearLayout
         android:id="@+id/imageView"
         android:layout_width="372dp"
         android:layout_height="178dp"
@@ -28,7 +29,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
 
     <Button
         android:id="@+id/rating"
@@ -90,6 +96,8 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/autoCompleteTextView2" />
+
+
 
 
 </android.support.constraint.ConstraintLayout>
