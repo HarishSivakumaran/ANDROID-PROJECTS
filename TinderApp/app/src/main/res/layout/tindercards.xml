@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:layout_margin="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/foodimage"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/f9"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/text"
+            android:textColor="@android:color/background_dark"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_red_dark"
+                android:text="LEFT SWIPE"
+                android:textColor="@android:color/white"
+                android:layout_marginHorizontal="2dp"
+                android:layout_weight="1" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:layout_height="wrap_content"
+                android:text="SUPER LIKE"
+                android:background="@android:color/holo_purple"
+                android:textColor="@android:color/white"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:layout_height="wrap_content"
+                android:text="RIGHT SWIPE"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_dark"
+
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

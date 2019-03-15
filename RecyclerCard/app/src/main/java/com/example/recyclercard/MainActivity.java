@@ -19,7 +19,32 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        recyclerView=findViewById(R.id.recyclerview);
+
+        layoutManager = new LinearLayoutManager(this);
+
+
         exampleitemArrayList = new ArrayList<exampleitem>();
+
+        generateFakeData();
+
+        adapter = new ExampleAdapter(exampleitemArrayList);
+
+
+
+
+
+
+
+        configRecyclerView();
+
+
+
+
+    }
+
+
+    public  void  generateFakeData(){
 
         exampleitemArrayList.add(new exampleitem(R.drawable.p1,"PICTURE 1"));
         exampleitemArrayList.add(new exampleitem(R.drawable.p2,"PICTURE 2"));
@@ -34,17 +59,20 @@ public class MainActivity extends AppCompatActivity {
         exampleitemArrayList.add(new exampleitem(R.drawable.p11,"PICTURE 11"));
 
 
-        recyclerView=findViewById(R.id.recyclerview);
 
-        layoutManager = new LinearLayoutManager(this);
 
-        adapter = new ExampleAdapter(exampleitemArrayList);
+    }
+
+    public void configRecyclerView(){
+
+
 
         recyclerView.setAdapter(adapter);
 
         recyclerView.setLayoutManager(layoutManager);
 
         recyclerView.setHasFixedSize(true);
+
 
     }
 }
