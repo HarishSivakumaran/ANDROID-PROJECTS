@@ -33,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
                 Toasty.warning(this,"OoppssS!", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.imageMessage:
-                Toasty.normal(this,"SAIBABA THUNAI", Toast.LENGTH_SHORT, ContextCompat.getDrawable(this,R.drawable.ic_cloud)).show();
+                Toasty.normal(this,"SAIBABA THUNAI", Toast.LENGTH_SHORT, ContextCompat.getDrawable(
+                        this,R.drawable.ic_cloud)).show();
                 break;
         }
     }

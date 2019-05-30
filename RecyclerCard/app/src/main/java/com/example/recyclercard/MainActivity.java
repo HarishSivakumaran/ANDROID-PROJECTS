@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
 
         layoutManager = new LinearLayoutManager(this);
 
-
         exampleitemArrayList = new ArrayList<exampleitem>();
 
         generateFakeData();

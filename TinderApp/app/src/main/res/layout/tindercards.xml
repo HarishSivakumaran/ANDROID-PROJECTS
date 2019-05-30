@@ -5,28 +5,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="6dp"
     android:layout_margin="4dp">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp"
         android:orientation="vertical"
-        >
+        android:padding="5dp">
 
         <ImageView
             android:id="@+id/foodimage"
             android:layout_width="match_parent"
             android:layout_height="400dp"
-            android:src="@drawable/f9"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            android:src="@drawable/f9" />
+
         <TextView
+            android:id="@+id/text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAllCaps="true"
             android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/background_dark"
             android:textSize="18dp"
-            android:textStyle="bold"
-            android:id="@+id/text"
-            android:textColor="@android:color/background_dark"/>
+            android:textStyle="bold" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -36,28 +38,30 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:layout_weight="1"
                 android:background="@android:color/holo_red_dark"
                 android:text="LEFT SWIPE"
-                android:textColor="@android:color/white"
-                android:layout_marginHorizontal="2dp"
-                android:layout_weight="1" />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_marginHorizontal="2dp"
-                android:layout_height="wrap_content"
-                android:text="SUPER LIKE"
-                android:background="@android:color/holo_purple"
-                android:textColor="@android:color/white"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_marginHorizontal="2dp"
-                android:layout_height="wrap_content"
-                android:text="RIGHT SWIPE"
-                android:textColor="@android:color/white"
-                android:background="@android:color/holo_blue_dark"
+                android:textColor="@android:color/white" />
 
-                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_purple"
+                android:text="SUPER LIKE"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_dark"
+                android:text="RIGHT SWIPE"
+
+                android:textColor="@android:color/white" />
 
 
         </LinearLayout>

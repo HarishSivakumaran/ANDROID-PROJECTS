@@ -40,10 +40,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-
-
         autoCompleteTextView=findViewById(R.id.autoCompleteTextView);
         autoCompleteTextView2=findViewById(R.id.autoCompleteTextView2);
         imageView=findViewById(R.id.imageView);
@@ -51,12 +47,10 @@ public class MainActivity extends AppCompatActivity {
         seekBar=findViewById(R.id.seekbar);
         rating=findViewById(R.id.rating);
         //constraintLayout=findViewById(R.id.layout_root);
-
-
-//        ArrayAdapter<St> arrayAdapter = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,food);
-//        autoCompleteTextView.setAdapter(arrayAdapter);
-//        ArrayAdapter<String> arrayAdapter2 = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,beverage);
-//        autoCompleteTextView2.setAdapter(arrayAdapter2);
+        //ArrayAdapter<St> arrayAdapter = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,food);
+        //autoCompleteTextView.setAdapter(arrayAdapter);
+        //ArrayAdapter<String> arrayAdapter2 = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,beverage);
+        //autoCompleteTextView2.setAdapter(arrayAdapter2);
 
           arrayAdapter = new ArrayAdapter<String>(getBaseContext(),android.R.layout.simple_list_item_1,food);
           arrayAdapter2 = new ArrayAdapter<String>(getBaseContext(),android.R.layout.simple_list_item_1,beverage);
@@ -67,12 +61,6 @@ public class MainActivity extends AppCompatActivity {
      animationDrawable.setExitFadeDuration(3000);
       animationDrawable.setEnterFadeDuration(3000);
         animationDrawable.start();
-
-
-
-
-
-
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -140,6 +128,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
 
 }
 

@@ -24,7 +24,11 @@ public class MainActivity extends AppCompatActivity {
         animationDrawable.start();
         login_btn=findViewById(R.id.login);
         signup_btn=findViewById(R.id.signup);
+
+
     }
+
+
     public void login(View view)  {
 
         login_btn.setEnabled(false);

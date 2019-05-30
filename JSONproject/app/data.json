@@ -1,0 +1,31 @@
+{
+  "course": {
+    "courseName": "android",
+    "courseType": 3
+  },
+  "coursecount": 7,
+  "email": "hr@hari.com",
+  "name": "harish",
+  "videos": [
+    {
+      "mDuration": 5,
+      "mVideoName": "intro"
+    },
+    {
+      "mDuration": 5,
+      "mVideoName": "da"
+    },
+    {
+      "mDuration": 5,
+      "mVideoName": "asa"
+    },
+    {
+      "mDuration": 5,
+      "mVideoName": "dca"
+    },
+    {
+      "mDuration": 5,
+      "mVideoName": "da"
+    }
+  ]
+}
